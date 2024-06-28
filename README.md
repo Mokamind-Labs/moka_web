@@ -14,7 +14,7 @@ Bem-vindo ao repositório do Moka Web! Este é um aplicativo front-end ambicioso
     - [Angular CLI](#angular-cli)
   - [Convenções Gerais de Código](#convenções-gerais-de-código)
     - [Guia de Estilização de código (Eslint + Prettier)](#guia-de-estilização-de-código-eslint--prettier)
-    - [Específico do Angular](#específico-do-angular)
+    - [Tópicos específicos do Angular](#tópicos-específicos-do-angular)
     - [Gerenciamento de Estado (NGRX)](#gerenciamento-de-estado-ngrx)
     - [**Testes**](#testes)
   - [Regras gerais para uma boa contribuição de PR](#regras-gerais-para-uma-boa-contribuição-de-pr)
@@ -37,7 +37,7 @@ Para garantir consistência e eficiência em contexto colaborativo, siga estas c
 ### VSCode
 
 1. **Extensões**:
-   - [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials) para geração de código template de novos novas entidades Angular e Ngrx
+   - [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials) para geração de código template de novas entidades Angular e Ngrx
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) para linting de TypeScript | Javascript
    - [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
@@ -77,7 +77,7 @@ Seguir convenções de codificação garante a legibilidade e a manutenção do 
 - **Indentação**: Use 2 espaços para indentação (padrão).
 - **Comprimento da Linha**: Limite as linhas a 150 caracteres.
 
-### Específico do Angular
+### Tópicos específicos do Angular
 
 - **Módulos**: Organize recursos, de maneira coesa, em módulos do Angular apenas em c**asos necessários** (legado), utilize componentes e serviços *standalones* por padrão. 
 - **Componentes**: Mantenha a lógica dos componentes simples e delegue tarefas complexas para serviços. Não crie soluções monoliticas usando poucos componentes, busque fatiar as soluções em componentes menores e mais fáceis de serem lidos, compreendidos e testados. Use soluções de gerencimanto de estado para compor soluções que necessitem de comunicação entre os componentes.
@@ -105,10 +105,13 @@ Seguir convenções de codificação garante a legibilidade e a manutenção do 
 Para manter um alto padrão de qualidade de código e garantir um processo de revisão rápido e eficiente, siga estas diretrizes de PR:
 
 1. **Nomeação de Branch**:
-   - Use nomes **de** branch descritivos (ex.: `feat-user-authentication`, `fix-login-error`).
+   - Use nomes **de** branch descritivos (ex.: `feat-user-authentication`, `fix-login-error`), com os mesmos prefixos expostos exposto no documento de especificação [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/), em resumo:
+     - Use o prefixo `feat` para novas funcionalidades, `fix` para correções de bugs e `chore` para alterações que não afetam o código (ex.: atualização do README).
+     -  Além disso podem ser usados os seguintes prefixos `build`, `ci`, `docs`, `style`, `refactor`, `perf`,  `test`, como explciados na documentação de [guidelines do Angular](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#-commit-message-guidelines).
+
 
 2. **Mensagens de Commit**:
-   - Escreva mensagens de commit claras e concisas. Use o modo imperativo (ex.: "Adicionar autenticação de usuário", "Corrigir erro de login").
+   - Escreva mensagens de commit claras e concisas. Use o modo imperativo (ex.: "Adicionar autenticação de usuário", "Corrigir erro de login"). Use o documento de especificação como referência [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/)
 
 3. **Descrição do PR**:
    - Forneça uma descrição detalhada das alterações feitas, incluindo o propósito e qualquer contexto relevante.
