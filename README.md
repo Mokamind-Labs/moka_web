@@ -41,11 +41,11 @@ mb_web_frontend/
 │   │   │   ├── guards/
 │   │   │   ├── services/
 │   │   │   ├── store/
-│	│   │   │   ├── actions/
-│	│   │   │   ├── reducers/
-│	│   │   │   ├── effects/
-│	│   │   │   ├── selectors/
-│	│   │   │   ├── index.ts
+│   │   │   │   ├── actions/
+│	 │   │   │   ├── reducers/
+│	 │   │   │   ├── effects/
+│	 │   │   │   ├── selectors/
+│	 │   │   │   ├── index.ts
 │   │   │   ├── index.ts
 │   │   ├── shared/
 │   │   │   ├── ui/
