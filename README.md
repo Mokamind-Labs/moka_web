@@ -8,6 +8,7 @@ Bem-vindo ao repositório do Moka Web! Este é um aplicativo front-end ambicioso
 - [Moka Web](#moka-web)
   - [Índice](#índice)
   - [Visão Geral do Projeto](#visão-geral-do-projeto)
+  - [Estrutura geral do projeto](#estrutura-geral-do-projeto)
   - [Configurações de Fluxo de Trabalho (Workflow)](#configurações-de-fluxo-de-trabalho-workflow)
     - [VSCode](#vscode)
     - [Navegador Chrome ou baseados em chrome](#navegador-chrome-ou-baseados-em-chrome)
@@ -29,6 +30,77 @@ Moka Web é projetado para proporcionar uma experiência de usuário perfeita e 
 - **Angular Material**: Para componentes de interface de usuário de alta qualidade e estilizados, com opções de customização que escalam até em dispositivos móveis.
 - **Font Awesome**: Para ícones escaláveis e personalizáveis.
 
+## Estrutura geral do projeto
+ ``` sql
+mb_web_frontend/
+│
+├── src/
+│   ├── app/
+│   │   ├── core/
+│   │   │   ├── interceptors/
+│   │   │   ├── guards/
+│   │   │   ├── services/
+│   │   │   ├── store/
+│	│   │   │   ├── actions/
+│	│   │   │   ├── reducers/
+│	│   │   │   ├── effects/
+│	│   │   │   ├── selectors/
+│	│   │   │   ├── index.ts
+│   │   │   ├── index.ts
+│   │   ├── shared/
+│   │   │   ├── ui/
+│   │   │   ├── directives/
+│   │   │   ├── pipes/
+│   │   │   ├── utils/
+│   │   │   ├── index.ts
+│   │   ├── feature/
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   ├── store/
+│   │   │   ├── feature.routes.ts
+│   │   │   ├── feature.component.html
+│   │   │   ├── feature.component.scss
+│   │   │   ├── feature.component.ts
+│   │   │   ├── index.ts
+│   │   ├── feature2/
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   ├── store/
+│   │   │   ├── feature2.routes.ts
+│   │   │   ├── feature2.component.html
+│   │   │   ├── feature2.component.scss
+│   │   │   ├── feature2.component.ts
+│   │   │   ├── index.ts
+│   │   ├── app.routes.ts
+│   │   ├── app.component.html
+│   │   ├── app.component.scss
+│   │   ├── app.component.ts
+│   ├── assets/
+│   ├── environments/
+│   ├── index.html
+│   ├── main.ts
+│   ├── polyfills.ts
+│   ├── styles.scss
+│   ├── test.ts
+├── .editorconfig
+├── .gitignore
+├── angular.json
+├── package.json
+├── README.md
+├── tsconfig.json
+├── tslint.json
+```
+
+- **src/app/core/**: Possui serviços em padrão singleton (Injetados na root), interceptadores,  guardas e a 'store' (global store) que devem ser configurados uma vez e estar disponíveis para aplicação inteira.
+    - **src/app/core/store/**: Contêm as principais configurações da store NGRX, incluindo ações, redutores, efeitos e seletores.
+    
+- **src/app/shared/**:  Contêm componentes ui  (componentes de apresentação), serviços compartilhados, diretivas e pipes que são utilizados em variadas funcionalidades, podendo ser importados por múltiplos componentes diferentes.
+    
+- **src/app/feature{x}/**: Contêm componentes, serviços, rotas, e 'stores' (component stores ou signal stores) específicos para uma funcionalidade, podendo conter pipes e diretivas específicos a aquele componente/funcionalidade. Cada funcionalidade deve ter seu próprio diretório, cada diretório pode ter vários componentes.
+    
+- **src/assets/**: Possui recursos estáticos como images e fontes que são utilizados pela aplicação
+    
+- **src/environments/**: Armazena configurações específica de ambientes.
 
 ## Configurações de Fluxo de Trabalho (Workflow)
 
