@@ -98,9 +98,11 @@ mb_web_frontend/
     
 - **src/app/feature{x}/**: Contêm componentes, serviços, rotas, e 'stores' (component stores ou signal stores) específicos para uma funcionalidade, podendo conter pipes e diretivas específicos a aquele componente/funcionalidade. Cada funcionalidade deve ter seu próprio diretório, cada diretório pode ter vários componentes.
     
-- **src/assets/**: Possui recursos estáticos como images e fontes que são utilizados pela aplicação
+- **src/assets/**: Possui recursos estáticos que podem ser empregados por toda a aplicação como imagens, ícones, e fontes.
     
-- **src/environments/**: Armazena configurações específica de ambientes.
+- **src/environments/**: Armazena configurações específica a ambientes.
+
+- **src/styles.scss**: Arquivo de configuração global de CSS.
 
 ## Configurações de Fluxo de Trabalho (Workflow)
 
