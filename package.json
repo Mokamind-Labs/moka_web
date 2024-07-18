@@ -56,6 +56,6 @@
       "eslint  --fix",
       "prettier src/ --write"
     ],
-    "*.{html, css}": "prettier src --write"
+    "*.{html, css, scss}": "prettier src --write"
   }
 }
