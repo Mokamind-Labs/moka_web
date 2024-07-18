@@ -114,6 +114,8 @@ Para garantir consistência e eficiência em contexto colaborativo, siga estas c
    - [Angular Essentials](https://marketplace.visualstudio.com/items?itemName=johnpapa.angular-essentials) para geração de código template de novas entidades Angular e Ngrx
    - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) para linting de TypeScript | Javascript
    - [Prettier - Code Formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+   - [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss) para habilitar funcionalidades que auxilam no desenvolvimento com classes talwind como autocomplete, linting e destaque de palavras reservadas.
+
 
 2. **Configurações**:
    - Habilitar formatação ao salvar: `"editor.formatOnSave": true`
