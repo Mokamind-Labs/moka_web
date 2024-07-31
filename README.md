@@ -1,7 +1,7 @@
 
 # Moka Web
 
-Bem-vindo ao repositório do Moka Web! Este é um aplicativo front-end ambicioso construído com a versão mais recente do Angular, NGRX para gerenciamento de estado, ~~e Chart.js~~ para visualização de dados. Este documento descreve as configurações de fluxo de trabalho, convenções gerais de codificação e diretrizes de contribuição de PR(pull request) para garantir um processo de desenvolvimento eficiente e colaborativo.
+Bem-vindo ao repositório do Moka Web! Este é um aplicativo front-end ambicioso construído com a versão mais recente do Angular, NGRX para gerenciamento de estado, e Chart.js para visualização de dados. Este documento descreve as configurações de fluxo de trabalho, convenções gerais de codificação e diretrizes de contribuição de PR(pull request) para garantir um processo de desenvolvimento eficiente e colaborativo.
 
 ## Índice
 
@@ -42,10 +42,10 @@ mb_web_frontend/
 │   │   │   ├── services/
 │   │   │   ├── store/
 │   │   │   │   ├── actions/
-│	 │   │   │   ├── reducers/
-│	 │   │   │   ├── effects/
-│	 │   │   │   ├── selectors/
-│	 │   │   │   ├── index.ts
+│	  │   │   │   ├── reducers/
+│	  │   │   │   ├── effects/
+│	  │   │   │   ├── selectors/
+│	  │   │   │   ├── index.ts
 │   │   │   ├── index.ts
 │   │   ├── shared/
 │   │   │   ├── ui/
