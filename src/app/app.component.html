@@ -1,5 +1,6 @@
+<app-sidebar-nav #sidebar [toogleMenu]="openMenu"></app-sidebar-nav>
 <div class="flex min-h-screen flex-col">
-  <app-header></app-header>
+  <app-header (openSidebarMenu)="openMenu = $event"></app-header>
   <main class="m-auto mt-3 w-[90vw] flex-grow">
     <app-reports-dashboard> </app-reports-dashboard>
   </main>

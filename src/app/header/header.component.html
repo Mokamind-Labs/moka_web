@@ -1,12 +1,16 @@
 <header class="bg-gradient-to-r from-[#4F2362] to-[#862BAD]">
   <div class="mx-auto w-full p-2 md:p-4">
     <div class="text-white sm:flex sm:items-center sm:justify-between">
-      <div class="ms-2 flex md:ms-6">
+      <div class="ms-2 flex flex-auto md:ms-6">
         <img src="../../assets/images/logo.svg" class="h-8 md:h-12" alt="Mokamind Logo" />
 
         <div class="ms-4 flex md:ms-8 md:mt-4">
           <h6>Relatório climatização | Conforto e conomia</h6>
         </div>
+      </div>
+
+      <div class="mr-4 flex flex-shrink sm:visible">
+        <app-menu-btn (menuBtnClicked)="sendOpenMenuEvent($event)"></app-menu-btn>
       </div>
 
       <div class="invisible flex sm:visible">
