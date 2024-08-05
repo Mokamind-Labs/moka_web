@@ -1,0 +1,37 @@
+<!-- <div
+  class="absolute left-0 top-0 z-50 flex min-h-screen w-56 flex-auto transform flex-col overflow-y-auto bg-gradient-to-r from-[#4F2362] to-[#862BAD] text-white bg-blend-overlay transition-transform duration-300 ease-in-out"
+  id="sidebar"
+  [ngClass]="{ '-translate-x-full': !toogleMenu() }"
+> -->
+<!-- div
+  class="absolute bg-gray-800 text-white w-56 min-h-screen overflow-y-auto transition-transform transform -translate-x-full ease-in-out duration-300"
+  id="sidebar"> -->
+<!-- Conteudo da navegação -->
+<div class="flex h-auto flex-grow flex-col justify-between">
+  <!-- <h1 class="text-2xl font-semibold">Sidebar</h1> -->
+
+  <div class="mt-4 flex-grow pt-5">
+    <mat-accordion>
+      <mat-expansion-panel class="mat-elevation-z0">
+        <mat-expansion-panel-header>
+          <mat-icon svgIcon="analyticsIcon" class="dashboard-panel-icon"></mat-icon>
+          Analytics
+        </mat-expansion-panel-header>
+
+        <ng-template matExpansionPanelContent> Relatório climatização </ng-template>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </div>
+
+  <div class="flex-none border-t border-t-gray-300 py-4 pr-1">
+    <!-- <hr> -->
+    <div class="mt-2 flex flex-row px-3">
+      <img src="../../assets/icons/rotate-arrow-clockwise.svg" class="update-icon" />
+      <div>
+        <span class="block text-nowrap text-sm font-light">Atualizado em </span>
+        <span class="block text-nowrap text-sm font-light">18/04/2022 ás 09:24 </span>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- </div> -->

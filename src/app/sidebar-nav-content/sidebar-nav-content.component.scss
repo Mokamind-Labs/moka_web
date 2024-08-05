@@ -1,0 +1,31 @@
+:host {
+  display: flex;
+  height: 100%;
+}
+
+.update-icon {
+  margin-right: 10px;
+}
+
+main {
+  min-height: max-content;
+}
+
+.mat-expansion-panel {
+  background: transparent;
+}
+
+.mat-accordion {
+  & > .mat-expansion-panel {
+    &:first-of-type,
+    &:last-of-type {
+      border-radius: unset;
+    }
+  }
+}
+
+.dashboard-panel-icon {
+  transform: scale(2);
+  margin-right: 10px;
+  text-transform: capitalize;
+}

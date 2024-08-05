@@ -1,8 +1,17 @@
-<app-sidebar-nav #sidebar [toogleMenu]="openMenu"></app-sidebar-nav>
+<!-- <app-sidebar-nav #sidebar [toogleMenu]="openMenu"></app-sidebar-nav> -->
 <div class="flex min-h-screen flex-col">
-  <app-header (openSidebarMenu)="openMenu = $event"></app-header>
-  <main class="m-auto mt-3 w-[90vw] flex-grow">
-    <app-reports-dashboard> </app-reports-dashboard>
-  </main>
+  <app-header (openSidebarMenu)="snav.toggle($event)"></app-header>
+  <mat-sidenav-container class="min-h-screen" hasBackdrop="false">
+    <mat-sidenav #snav mode="push" [autoFocus]="false" class="custom-sidenav">
+      <app-sidebar-nav-content></app-sidebar-nav-content>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <main class="m-auto mt-3 w-[90vw] flex-grow">
+        <app-reports-dashboard> </app-reports-dashboard>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
   <app-footer></app-footer>
 </div>
